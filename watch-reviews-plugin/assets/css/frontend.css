@@ -1,0 +1,270 @@
+/**
+ * Watch Reviews Block - Frontend Styles
+ * Styled to match the Canon EOS example
+ */
+
+.watch-review-block {
+    margin: 40px 0;
+    padding: 40px;
+    background: #f7f8fa;
+    border-radius: 8px;
+}
+
+.watch-review-verdict {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.watch-review-heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    color: #333;
+}
+
+/* Main Content Grid */
+.watch-review-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+/* Overall Score (Left Column) */
+.watch-review-overall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.watch-review-gauge {
+    position: relative;
+}
+
+.circular-gauge {
+    display: block;
+}
+
+.watch-review-label {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+/* Individual Ratings (Right Column) */
+.watch-review-ratings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.watch-review-rating-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.watch-review-rating-label {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #666;
+}
+
+.watch-review-rating-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.watch-review-rating-bar {
+    flex: 1;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.watch-review-rating-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #FF6B35 0%, #F90C13 100%);
+    border-radius: 6px;
+    transition: width 0.3s ease;
+}
+
+.watch-review-rating-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    min-width: 50px;
+    text-align: right;
+}
+
+/* Recommendation */
+.watch-review-recommendation {
+    margin: 40px 0;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.watch-review-recommendation h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+.watch-review-recommendation-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 3px solid;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.watch-review-recommendation-badge.recommend-yes {
+    border-color: #4CAF50;
+    color: #4CAF50;
+    background: #f1f8f4;
+}
+
+.watch-review-recommendation-badge.recommend-no {
+    border-color: #F44336;
+    color: #F44336;
+    background: #fef5f4;
+}
+
+.recommendation-icon {
+    font-size: 24px;
+}
+
+/* Pros and Cons */
+.watch-review-pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.watch-review-likes,
+.watch-review-dislikes {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.watch-review-pros-heading,
+.watch-review-cons-heading {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.watch-review-pros-heading {
+    color: #4CAF50;
+}
+
+.watch-review-cons-heading {
+    color: #F44336;
+}
+
+.icon-positive,
+.icon-negative {
+    flex-shrink: 0;
+}
+
+.watch-review-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: list-counter;
+}
+
+.watch-review-list-item {
+    padding: 15px 0;
+    border-bottom: 2px dotted #e0e0e0;
+    display: flex;
+    gap: 10px;
+    line-height: 1.6;
+}
+
+.watch-review-list-item:last-child {
+    border-bottom: none;
+}
+
+.item-number {
+    font-weight: 700;
+    color: #999;
+    min-width: 35px;
+}
+
+.item-text {
+    flex: 1;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .watch-review-block {
+        padding: 20px;
+    }
+
+    .watch-review-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .watch-review-overall {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #e0e0e0;
+    }
+
+    .watch-review-pros-cons {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .watch-review-recommendation {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .watch-review-heading {
+        font-size: 24px;
+    }
+
+    .watch-review-label {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .watch-review-gauge svg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .watch-review-rating-value {
+        font-size: 14px;
+    }
+
+    .watch-review-likes,
+    .watch-review-dislikes {
+        padding: 20px;
+    }
+}
