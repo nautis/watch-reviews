@@ -1,0 +1,1466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Mura Documentation</title>
+	<link rel="stylesheet" href="assets/css/style.css" media="screen">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Tabs UI -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+	  $( function() {
+	    $( "#tabs" ).tabs();
+	  } );
+	  </script>
+	  <script src="assets/js/main.js"></script>
+</head>
+
+
+<body>
+
+		<div class="wrapper">
+
+		<aside>
+		<div class="sticky-menu">
+		<h2>Mura v1.7.0</h2>
+		<ol class="alpha">
+			<li><a href="#install">Installation</a>
+				<ul class="sub-menu">
+					<li><a href="#plugins">Plugins</a>
+						<ul class="sub-menu">
+							<li><a href="#upgradetfmthemeboost">Upgrade TFM Theme Boost: v1.x &#8594; v2.x</a></li>
+						</ul></li>
+					<li><a href="#demoimport">Demo Import</a></li>
+					<li><a href="#update">How to update your theme</a></li>
+				</ul>
+			</li>
+			<li class="has-children"><a href="#navigation">Menus</a>
+				<ul class="sub-menu">
+					<!-- <li><a href="#menuclasses">Special Menu Items</a></li> -->
+					<li><a href="#socialmenu">Social Menu</a></li>
+					<li><a href="#calltoaction">Subscribe Button</a></li>
+				</ul>
+			</li>
+			<li><a href="#widgets">Widgets</a>
+			<ul class="sub-menu">
+					<li><a href="#postswidget">Posts Widget</a></li>
+					<li><a href="#socialwidget">Social Widget</a></li>
+					<li><a href="#inloopsidebars">Add Widgets Between Posts</a></li>
+				</ul>
+			</li>
+			<li><a href="#themecustomize">Theme Settings</a></li>
+				<li><a href="#coloursettings">Colour Settings</a></li>
+			<li><a href="#tfmpostblocks">Homepage Post Blocks</a></li>
+			<li><a href="#tfmrelatedposts">Related Posts</a></li>
+			<li><a href="#tfmsocialsettings">Social Media Settings</a></li>
+			<li><a href="#tfmads">Advertising Areas</a></li>
+			<li><a href="#translate">Translate Theme</a></li>
+			<li><a href="#optimization">Optimization (Page Speed/SEO)</a></li>
+			<li><a href="#amp">AMP</a></li>
+			<li><a href="#postformats">Post Formats</a></li>
+			<li><a href="#hooks">Theme Hooks</a></li>
+			<li><a href="#fonts">Change Fonts</a></li>
+			<li><a href="#tfmratings">Add Rating to Posts</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			<li><a href="#changelog">Changelog</a></li>
+
+
+		</ol>
+	</div>
+	</aside>
+
+	<div class="main">
+
+		<header><h1 id="toc" class="toc">Mura: Theme Documentation</h1></header>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					By: <a href="http://www.3forty.media" target="_blank">3Forty Media</a> | Follow me on <a href="https://themeforest.net/user/3fortymedia/portfolio" target="_blank">Themeforest</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+		</div><!-- end div .borderTop -->
+
+		<h2 id="about"><strong>Introduction</strong></h2>
+		<p>Thankyou for purchasing Mura.</p>
+		<p>This document will help you get your theme installed and setup with further guides to help you get the most out of your theme. If you do have questions please leave a comment or send me a message through my <a href="https://themeforest.net/user/3fortymedia" target="_blank">profile page.</a></p>
+		<p><strong>If you like Mura, please take a moment to rate or leave a comment or review, it really helps. Thanks so much!</strong></p>
+		
+		<h2 id="install"><strong>Installation</strong> - <a href="#toc">top</a></h2>
+
+		<h3>Download your theme</h3>
+		<p>Download the zipped package from your <a href="https://www.themeforest.net/downloads" target="_blank">ThemeForest Downloads</a> to your computer. Extract the downloaded file and you will see <b>mura.zip</b>, this is your theme archive.</p>
+
+		<h3>Install theme</h3>
+		<ol>
+			<li>Login to your WordPress Admin and go to: <strong class="path">Appearance &#8594; Themes.</strong></li>
+			<li>At the top of the screen click <b>Add New</b> and then click <b>Upload Theme.</b></li>
+			<li>Select <strong>mura.zip</strong> archive file and click <b>Install Now.</b></li>
+			<li>Once installation is complete click <b>Activate.</b></li>
+		</ol>
+
+		<h3>Install Child Theme <sup>*Optional</sup></h3>
+
+		<p>If you wish to add your own custom modifications I recommend installing the Mura child theme and adding your modifications. This will ensure you will not lose your changes when you update Mura theme.</p>
+		<p>You will need to install the parent theme first (above)</p>
+		<ol>
+			<li>Login to your WordPress Admin and go to: <strong class="path">Appearance &#8594; Themes.</strong></li>
+			<li>At the top of the screen click <b>Add New</b> and then click <b>Upload Theme.</b></li>
+			<li>Select <strong>mura-child.zip</strong> archive file and click <b>Install Now.</b></li>
+			<li>Once installation is complete click <b>Activate.</b></li>
+		</ol>
+		
+		<h2 id="plugins"><strong>Plugins</strong> - <a href="#toc">top</a></h2>
+
+		<div class="notice"><p>Plugins are not required but are recommended to get the most out of your theme.</p> <p>Some theme demo's will not work properly without the required plugins</p></div>
+
+		<h3>To install plugins</h3>
+
+		<ol>
+			<li><strong class="path">Appearance &#8594; Plugins.</strong></li>
+			<li>Check each plugin you want to install and select <strong>Install</strong> from the drop down menu.</li>
+			<li>Click <strong>Apply.</strong></li>
+			<li>Once installed go to <strong class="path">Plugins &#8594; Installed Plugins</strong> and activate each plugin.</li>
+		</ol>
+
+		<h3>Recommended plugins</h3>
+
+		<div class="bordered plugin blocks"><i>P</i>
+			<h3>TFM Homepage Post Blocks</h3>
+		<p>Multiple customizable post block displays for your homepage, supports sidebars, widgets and full colour editing</p><span class="included">Included in theme download</span></div>
+
+		<div class="bordered plugin boost"><i>B</i><h3>TFM Theme Boost</h3>
+		<p>A collection of additional features, theme options, theme displays and add-ons for your theme.</p>
+		<h4>Features</h4>
+		<p><strong>Hero:</strong> Display hero content (posts) of our choosing on the homepage with optional slider and carousel</p>
+		<p><strong>Post Widget:</strong> A highly customizable posts display widget that supports numerous filter options, meta settings and display options.</p>
+		<p><strong>Related Posts:</strong> Configurable related posts display</p>
+		<p><strong>Social Media:</strong> Social channels, social wigets and theme options</p>
+		<p><strong>Advertising:</strong> Upload banners or add your advertising code in various theme locations</p>
+		<p><strong>Featured Posts:</strong> Persistent post displays in prominent locations</p>
+
+		<p class="notice">Once installed click the <strong>Settings</strong> link or the <strong>TFM Theme Boost</strong> link in the dashboard menu to enable the features you require</p>
+		<span class="included">Included in theme download</span></div>
+
+		<h3 id="upgradetfmthemeboost">Upgrade TFM: Theme Boost: v1.x &#8594; v2.x</h2>
+
+			<p>Only upgrade TFM Theme Boost plugin if you have Mura theme version 1.6 or greater</p>
+
+		<ol>
+			<li>Install Mura theme version 1.6x or greater</a></li>
+			<li>Click <strong class="path">Plugins.</strong> in the main menu</li>
+			<li>Look for TFM Theme Boost plugin and click the link that says <strong>Update Required</strong></li>
+			<li>Follow the onscreen instructions to upgrade the plugin and activate</strong></li>
+			<li>De-activate and uninstall the following plugins: <strong>TFM: Posts Widget, TFM: Related Posts, TFM: Hero, TFM: Social plugin</strong>.<br /><small>These plugins are now included in the TFM: Theme Boost plugin</small></li>
+		</ol>
+
+		<h3>Supported plugins</h3>
+
+		<div class="bordered plugin"><img src="assets/media/icon-woo.png" alt=""><h3>WooCommerce</h3>
+		<p>WooCommerce is the world’s most popular open-source eCommerce solution.</p>
+		<p><a href="https://wordpress.org/plugins/woocommerce/" class="gotoplugin" target="_blank">Plugin site &#8594;</a></p></div>
+
+		<div class="bordered plugin"><img src="assets/media/dark-mode-icon-256x256.gif" alt=""><h3>WP Dark Mode</h3>
+		<p>WP Dark Mode automatically enables a stunning dark mode of your website based on user's operating system. Supports macOS, Windows, Android &amp; iOS.</p>
+		<p><a href="https://wordpress.org/plugins/wp-dark-mode/" class="gotoplugin" target="_blank">Plugin site &#8594;</a></p></div>
+
+		<div class="bordered plugin"><img src="assets/media/mc4wp-icon-256x256.png" alt=""><h3>MC4WP: Mailchimp for WordPress</h3>
+		<p>Mailchimp for WordPress, the #1 unofficial Mailchimp plugin.</p>
+		<p><a href="https://wordpress.org/plugins/mailchimp-for-wp/" class="gotoplugin" target="_blank">Plugin site &#8594;</a></p></div>
+
+		<div class="bordered plugin"><img src="assets/media/navxt-icon.png" alt=""><h3>Breadcrumb NavXT</h3>
+		<p>Breadcrumb NavXT, the successor to the popular WordPress plugin Breadcrumb Navigation XT, was written from the ground up to be better than its ancesto...</p>
+		<p><a href="https://wordpress.org/plugins/breadcrumb-navxt/" class="gotoplugin" target="_blank">Plugin site &#8594;</a></p></div>
+
+		<div class="bordered plugin"><img src="assets/media/yoast-icon.png" alt=""><h3>Yoast SEO</h3>
+		<p>Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.</p>
+		<p><a href="https://wordpress.org/plugins/wordpress-seo/" class="gotoplugin" target="_blank">Plugin site &#8594;</a></p></div>
+
+		<h2 id="demoimport"><strong>Demo Import</strong> - <a href="#toc">top</a></h2>
+
+		<p>Mura includes many pre-built demos and optional demo content to help get you started. To install a demo</p>
+
+		<div class="notice">
+		<h3>Before you begin</h3>
+		<ol>
+			<li>Install and acivate the recommended plugins</li>
+			<li>Click <strong>TFM Theme Boost</strong> link in the dashboard menu and enable all features</li>
+		</ol>
+		<p>Disable any plugins and TFM Theme Boost features you do not require after the demo import</p>
+	</div>
+
+		<ol>
+			<li>Install & Activate <a href="https://wordpress.org/plugins/one-click-demo-import/" target="_blank">One Click Demo Import</a></li>
+			<li>Go to <strong class="path">Appearance &#8594; Import Demo Data.</strong></li>
+			<li>Select a demo and click <strong>Import Demo</strong></li>
+			<li>Confirm by clicking <strong>Continue & Import</strong></li>
+		</ol>
+
+		<p><strong>Note* </strong>If you have existing content you should click <strong>Switch to Manual Import</strong> to import just the settings. The required <strong>Widgets <sup>WIE</sup></strong> file and <strong>Customizer <sup>DAT</sup></strong> file are included in your full theme download</p>
+
+		<h3>Install different demos</h3>
+		<p class="note">Note* If you want to try different demos, you will need to reset your Customizer settings before installing a new demo.</p>
+		<ol>
+			<li>Install <a href="https://wordpress.org/plugins/customizer-reset-by-wpzoom/" target="_blank">Customizer Reset</a></li>
+			<li>Go to <strong class="path">Appearance &#8594; Customize &#8594; Reset.</strong></li>
+			<li>You can now install a different demo *You may still need to manually remove some of the widgets</li>
+		</ol>
+
+		<div class="notice">
+			<p>Due to licensing restrictions some demo images may not be included. Placeholder or royalty/attribute free images may be included instead.</p>
+		</div>
+
+		<h2 id="update"><strong>How to update your theme</strong> - <a href="#toc">top</a></h2>
+
+		<div class="notice">
+			<p>Important* <a href="https://wordpress.org/support/article/backing-up-your-database/" target="_blank">Backup your database</a> and backup any theme file modifcations you have made before updating your theme. You will need to add your file changes again after updating your theme.</p>
+		</div>
+
+		<h3>Envato Market Plugin</h3>
+
+		<p class="notice">You will need to download <a href="https://www.envato.com/lp/market-plugin/" target="_blank">Envato Market Plugin</a> to use this method</p>
+
+		<h4>Install Envato Market Plugin</h4>
+
+		<ol>
+			<li><strong class="path">Appearance &#8594; Plugins &#8594; Add New</strong></li>
+			<li>Click <strong>Upload</strong></li>
+			<li>Locate and select the <strong>Envato Market</strong> plugin and click <strong>Install</strong></li>
+			<li>Once installed click <strong>Activate Plugin</strong></li>
+		</ol>
+
+		<h4>Configure your Envato API</h4>
+
+		<ol>
+			<li>Click the link in the <strong>Activate Envato API Connection</strong></li>
+			<li>Sign in to your Envato Account if you are not already</li>
+			<li>Enter a <strong>Token Name</strong> </li>
+			<li>Check the following options:
+				<ul>
+				<li>View and search Envato sites</li>
+				<li>Download the user's purchased items</li>
+				<li>List purchases the user has made</li>
+				<li>Terms and Conditions agreement</li>
+			</ul>
+		</li>
+			<li>Click <strong>Create Token</strong> button</li>
+			<li>Copy the token</li>
+			<li>Paste the token into into your <strong>Envato Market Dashboard</strong> token field and Click <strong>Save</strong></li>
+		</ol>
+
+		<p>Whenever a theme update is available you will see an <strong>Update Available</strong> notice.</p>
+
+		<h3>Manual update</h3>
+
+		<p><a href="#install">Manually update your theme</a></p>
+
+		<h2 id="navigation"><strong>Menus</strong> - <a href="#toc">top</a></h2>
+
+		<p>Mura has seven menu locations. The method for creating each menu is the same, simply select a different display location for each menu.</p>
+
+		<h3>To create a new menu</h3>
+		<ol>
+			<li>Go to <strong class="path">Appearance &#8594; Menus.</strong></li>
+			<li>Click <strong>Create a new menu.</strong></li>
+			<li>Enter a name for your menu (E.g. Primary Menu) and click <strong>Create Menu.</strong></li>
+			<li>In the <strong>Add Menu Items</strong> panel add categories, posts, pages &amp; custom menu items. Click <strong>Add to Menu</strong> and arrange as required</li>
+			<li>Select a display location  (E.g. Primary Menu)</li>
+			<li>Click <strong>Save Menu</strong></li>
+		</ol>
+
+		<h3>Menu locations</h3>
+
+		<div class="bordered plugin">
+
+		<h3>Primary Menu</h3>
+		<p>The primary menu is located in the three site header layouts. The primary menu supports multiple levels</p>
+		<ul>
+			<li>Default</li>
+			<li>Logo Below Nav</li>
+			<li>Logo Left Menu</li>
+		</ul>
+		<p>You can also set your primary menu to <strong>Toggle Sidebar</strong> to add a mobile menu on small devices.</p>
+
+	</div>
+
+	<div class="bordered plugin">
+
+		<h3>Toggle Sidebar Primary Menu</h3>
+		<p>Located in the slide out sidebar and supports unlimited levels</p>
+
+	</div>
+
+		<div class="bordered plugin">
+
+		<h3>Footer Menu</h3>
+		<p>The footer menu is located in <strong>w/Menu</strong> footer layouts</p>
+
+	</div>
+
+		<div class="bordered plugin">
+
+		<h3>Split Menu</h3>
+
+		<p>Split Menu is located in the header layout: <strong>Logo Split Menu</strong> and consists of two menu locations; <strong>Split Menu Left</strong> &amp; <strong>Split Menu Right</strong></p>
+
+	</div>
+
+	<div class="bordered plugin">
+
+		<h3>Header Secondary</h3>
+
+		<p>The secondary menu is located in the left or right side of all header layouts. This menu is useful for subscribe or call to action buttons or the Mura multi level social menu</p>
+
+	</div>
+
+	<div class="bordered plugin">
+
+		<h3>Header Third</h3>
+
+		<p>The third menu is located in the left or right side of the header. Not all header layouts support a third menu. This menu is useful for subscribe or call to action buttons or the Mura multi level social menu</p>
+
+	</div>
+
+	<h2 id="socialmenu"><strong>Social Menu</strong> - <a href="#toc">top</a></h2>
+
+	<p>The social menu is a drop down menu that displays social media icons and text within menu items.</p>
+
+	<p>You can add the social menu to any multi-level menu (E.g. Primary Menu) or assign to a display location such as the <strong>Third Menu.</strong></p>
+
+	<ol>
+		<li>Go to <strong class="path">Appearance &#8594; Menus.</strong></li>
+		<li>Click <strong>Screen Options</strong> tab at the top of the page.</li>
+		<li>Check <strong>CSS Classes</strong> checkbox.</li>
+	</ol>
+
+	<img src="assets/media/screen_options.png" alt="" >
+
+	<h3>Create the parent menu item</h3>
+	<p>If you are adding menu items to an existing parent menu (E.g. Primary Menu) you can skip this step. You will still need to add <code>tfm-social-menu</code> to the parent menu item.</p>
+	<ol>
+		<li>Click <strong>Custom Links</strong> in the <strong>Add menu items</strong> panel</li>
+		<li>Add a <strong>Hashtag</strong> to the <strong>URL</strong> field and text to the <strong>Link Text</strong> field</li>
+		<li>Click <strong>Add to Menu</strong></li>
+		<li>Expand the menu item and enter <code>tfm-social-menu</code> in the <strong>CSS Classes</strong> field</li>
+		<li>Remove the hashtag from the URL field</li>
+	</ol>
+	<h3>Add the sub menu items</h3>
+	<ol>
+		<li>Click <strong>Custom Links</strong> in the <strong>Add menu items</strong> panel</li>
+		<li>Add the full URL for your social media page in the <strong>URL</strong> field and text in the <strong>Link Text</strong> field</li>
+		<li>Click <strong>Add to Menu</strong></li>
+		<li>Arrange this item as a sub-menu item</li>
+		<li>Expand the menu item and enter the relevant CSS class in the <strong>CSS Classes</strong> field. E.g. <code>tfm-twitter</code> to show the Twitter social icon</li>
+		<li>Repeat for every social media site you want to add (supported icon list below)</li>
+	</ol>
+	<h3>Set Location &amp; Save the menu</h3>
+	<ol>
+		<li>Choose a display location in the <strong>Menu Settings</strong> panel</li>
+		<li>Click <strong>Save Menu</strong></li>
+</ol>
+
+	<img src="assets/media/social_menu.png" alt="" >
+
+	<h3>Supported icons &amp; CSS classes</h3>
+
+	<table class="social-menu-table">
+		<tr>
+		<th>Twitter</th>
+		<td>tfm-twitter</td>
+		<th>Facebook</th>
+		<td>tfm-facebook</td>
+	</tr>
+	<tr>
+	<th>Pinterest</th>
+	<td>tfm-pinterest</td>
+	<th>YouTube</th>
+	<td>tfm-youtube</td>
+	</tr>
+	<tr>
+	<th>Instagram</th>
+	<td>tfm-instagram</td>
+	<th>Flickr</th>
+	<td>tfm-flickr</td>
+	</tr>
+	<tr>
+	<th>Vimeo</th>
+	<td>tfm-vimeo</td>
+	<th>Vkontakte</th>
+	<td>tfm-vk</td>
+	</tr>
+	<tr>
+	<th>Tumblr</th>
+	<td>tfm-tumblr</td>
+	<th>Dribbble</th>
+	<td>tfm-dribbble</td>
+	</tr>
+	<tr>
+	<th>RSS</th>
+	<td>tfm-rss</td>
+	<th>Linked In</th>
+	<td>tfm-linkedin</td>
+	</tr>
+	<tr>
+	<th>500px</th>
+	<td>tfm-500px</td>
+	<th>Soundcloud</th>
+	<td>tfm-soundcloud</td>
+	</tr>
+	<tr>
+	<th>Spotify</th>
+	<td>tfm-spotify</td>
+	<th>Mixcloud</th>
+	<td>tfm-mixcloud</td>
+	</tr>
+	<tr>
+	<th>Medium</th>
+	<td>tfm-medium</td>
+	<th>Github</th>
+	<td>tfm-github</td>
+	</tr>
+	<tr>
+	<th>Behance</th>
+	<td>tfm-behance</td>
+	<th>Reddit</th>
+	<td>tfm-reddit</td>
+	</tr>
+	<tr>
+	<th>Gab</th>
+	<td>tfm-gab</td>
+	<th>Minds</th>
+	<td>tfm-minds</td>
+	</tr>
+	<tr>
+	<th>BitChute</th>
+	<td>tfm-bitchute</td>
+	<th>Steemit</th>
+	<td>tfm-steemit</td>
+	</tr>
+	<tr>
+	<th>TikTok</th>
+	<td>tfm-tiktok</td>
+	<th>Odnoklassniki</th>
+	<td>tfm-ok</td>
+	</tr>
+	</table>
+
+	<h2 id="calltoaction"><strong>Call to action/Subscribe Button</strong> - <a href="#toc">top</a></h2>
+
+	<ol>
+		<li>Go to <strong class="path">Appearance &#8594; Menus.</strong></lis>
+		<li>Click <strong>Screen Options</strong> tab at the top of the page.</li>
+		<li>Check <strong>CSS Classes</strong> checkbox.</li>
+		<li>Create your call to action/subscribe menu item.</li>
+		<li>Expand the menu item and enter <code>tfm-pill-menu</code> in the <strong>CSS Classes</strong> field</li>
+		<li>If you want a subscribe icon add <code>tfm-pill-menu tfm-subscribe</code> in the <strong>CSS Classes</strong> field</li>
+	</ol>
+
+	<p>A call to action button can be applied to any item in any menu or a single menu item assigned to a separate display location (E.g. Header Secondary or Header Third)</p>
+
+		<h2 id="widgets"><strong>Widgets</strong> - <a href="#toc">top</a></h2>
+
+		<p>Mura supports classic widgets &amp; block widgets. Since WordPress 5.8.0 there are three methods of adding widgets.</p>
+
+		<h3>Add a widget</h3>
+		<ol>
+			<li>Go to <strong class="path">Appearance &#8594; Widgets</strong></li>
+			<li>Select a sidebar</li>
+			<li>Click the <strong>Plus</strong> button at the top of the page or inside the sidebar</li>
+			<li>Search or Browse and select a widget</li>
+			<li>Configure the widget and click <strong>Update</strong></li>
+		</ol>
+
+		<h3>Add a widget with preview (customizer method)</h3>
+
+		<ol>
+			<li>Go to <strong class="path">Appearance &#8594; Customize &#8594; Widgets</strong></li>
+			<li>Select a sidebar (dependng on the page your are on not all sidebars will be visible)</li>
+			<li>Click the <strong>Plus</strong> button at the top or bottom of the customizer panel</li>
+			<li>Search or Browse and select a widget</li>
+			<li>Configure the widget and click <strong>Publish</strong></li>
+		</ol>
+
+		<h3>Add a widget (classic method)</h3>
+		<p>Since WordPress 5.8.0 you will need to install the <a href="https://wordpress.org/plugins/classic-widgets/" target="_blank">Classic Widgets</a> plugin to use this method</p>
+
+		<ol>
+			<li>Go to <strong class="path">Appearance &#8594; Widgets</strong></li>
+			<li>Drag the widget to the appropriate sidebar</li>
+			<li>Configure the widget and click <strong>Save</strong></li>
+		</ol>
+
+		<p>Configure <a href="#coloursettings">widget colours</a> in <a href="#coloursettings">Colour Settings.</a></p>
+
+		<h2><strong>Custom Widgets</strong></h2>
+
+		<p class="notice">You need to install <a href="#plugins">TFM Posts Widget</a> &amp; <a href="#plugins">TFM Social Plugin</a> to use these widgets.</p>
+
+		<h3 id="postswidget">TFM Posts Widget</h3>
+
+		<ol>
+			<li>Add <strong>TFM Posts Widget</strong> to your sidebar by your <a href="#widgets">chosen method</a></li>
+			<li>Configure the widget and click <strong>Save/Publish</strong></li>
+		</ol>
+
+		<h3 id="socialwidget">TFM Social Widget</h3>
+
+		<ol>
+			<li>Go to <strong>Appearance &#8594; Customize &#8594; TFM: Social Media Settings</strong></li>
+			<li>Enter the full URL's of your social media channels</li>
+			<li>Click <strong>Publish</strong></li>
+			<li>Add the <strong>TFM Social Media</strong> widget to your sidebar by your <a href="#widgets">chosen method</a></li>
+			<li>Configure the widget and click <strong>Save/Publish</strong></li>
+		</ol>
+
+		<h2 id="inloopsidebars"><strong>Add Widgets Between Posts</strong> - <a href="#toc">top</a></h2>
+		<p>The category page and homepage have a sidebar between blog list posts. These work like any other sidebar and support all widgets.</p>
+
+		<h3>Homepage Widgets</h3>
+
+		<ol>
+			<li>Add your widget to <strong>Home: Between Blog Posts</strong> sidebar by your <a href="#widgets">chosen method</a></li>
+			<li>Go to <strong>Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Homepage Settings</strong></li>
+			<li>Scroll down to <strong>Add widgets between posts</strong></li>
+			<li>Enter the position you would like to display your sidebar (E.g. <strong>3</strong> to set your sidebar as the third item in the blog list)</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<h3>Category Widgets</h3>
+
+		<ol>
+			<li>Add your widget to <strong>Category: Between Blog Posts</strong> sidebar by your <a href="#widgets">chosen method</a></li>
+			<li>Go to <strong>Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Archive/Category Settings</strong></li>
+			<li>Scroll down to <strong>Add widgets between posts in Category Pages</strong></li>
+			<li>Enter the position you would like to display your sidebar (E.g. <strong>3</strong> to set your sidebar as the third item in the blog list)</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<div class="notice"><p>Install <a href="https://wordpress.org/plugins/widget-context/" target="_blank">Widget Context</a> or <a href="https://wordpress.org/plugins/jetpack/" target="_blank">Jetpack</a> plugin and enable <a href="https://jetpack.com/support/widget-visibility/" target="blank">Widget Visibility</a> to hide/show different widgets for different categories, posts and pages.</p>
+		<p>Go To <strong>Plugins &#8594; Add New.</strong> Search for <strong>Jetpack</strong> or <strong>Widget Context.</strong> Download &amp; activate the plugin.</p>
+		</div>
+
+		<h2 id="themecustomize"><strong>Theme Settings</strong> - <a href="#toc">top</a></h2>
+
+		<p>All theme settings are managed with <strong>Live preview</strong> within the WordPress customizer separated into easy to manage sections and tabs.</p>
+
+		<div class="bordered">
+		<h3>Homepage Settings</h3>
+		<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Homepage Settings</strong></p>
+		<p>These settings apply to your latest posts. You can display <a href="#tfmpostblocks">Homepage Post Blocks</a> instead.</p>
+	</div>
+
+<div class="bordered">
+		<h3>Archive/Category Settings</h3>
+		<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Archive/Category Settings</strong></p>
+		<p>These settings apply to all category, archive, author, tag and search archives</p>
+	</div>
+<div class="bordered">
+		<h3>Single Post Settings</h3>
+		<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Single Post Settings</strong></p>
+		<p>You can override these global settings or set your options on a per post basis at the bottom of the New/Edit Post Settings Panel in the <strong>Mura: Post Options</strong> section</p>
+
+		<hr />
+
+		<h3>Mura Post Options</h3>
+		<p>Mura post options allow you to override global theme settings on a per-post basis.</p>
+		<h3>Single Post Style</h3>
+		<p>Override the global post style setting</p>
+
+		<h3>Single Sidebar</h3>
+		<p>Override the global sidebar setting</p>
+
+		<h3>Thumbnail Aspect Ratio</h3>
+		<p>Override the global thumbnail aspect ratio setting</p>
+
+		<h3>Disable Single Featured Image</h3>
+		<p>Disable the featured image in single post view.</p>
+
+		<h3>Featured Post</h3>
+		<p>Featured posts have alternative styling for added visibility in archive & blog lists.</p>
+
+		<hr />
+
+		<p><a href="#tfmsocialsettings">Display share icons</a></p>
+
+		<p><a href="#tfmsocialsettings">Display author bio social icons</a></p>
+
+		<p><a href="#tfmrelatedposts">Display related posts</a></p>
+
+	</div>
+
+<div class="bordered">
+		<h3>Page Settings</h3>
+		<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Page Settings</strong></p>
+		<p>You can override page sidebar settings or set your sidebar on a per page basis at the bottom of the New/Edit Page Settings Panel in the <strong>Mura: Page Options</strong> section</p>
+
+		<p><a href="#tfmsocialsettings">Display share icons</a></p>
+	</div>
+
+		<div class="bordered">
+		<h3>Header Settings</h3>
+		<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Header Settings</strong></p>
+
+		<p><a href="#tfmsocialsettings">Display social icons in the header</a></p>
+
+</div>
+
+<div class="bordered">
+	<h3>Footer Settings</h3>
+	<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Footer Settings</strong></p>
+
+	<p><a href="#tfmsocialsettings">Display social icons in the footer</a></p>
+
+		<h4>Display MailChimp Signup form before footer</h4>
+
+		<p class="notice">You will need to install <a href="#plugins">TFM: Theme Boost</a> &amp; <a href="#plugins">Mailchimp for WordPress</a> plugins to use this feature</p>
+
+		<ol>
+			<li>Go to <strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Footer Settings</strong></li>
+			<li>Check: <strong>Display MailChimp Form in Footer Area</strong></li>
+			<li>If you have multiple forms enter the <strong>Form ID</strong> of the form you want to display</li>
+			<li>Add your form title</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+</div>
+
+<div class="bordered">
+	<h3>Logo Settings</h3>
+	<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Logo/Site Title Settings</strong></p>
+</div>
+
+<div class="bordered">
+	<h3>Image Format Settings</h3>
+	<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Image Format Settings</strong></p>
+	<p>Image format inherits global post settings (configured in <strong>Homepage Settings</strong> & <strong>Archive Settings</strong>) or you can configure elements and thumbnail aspect ratio separately.</p>
+	<p>You can set post formats in the <strong>New/Edit Post</strong> settings panel <strong>&#8594; Post Format</strong></p>
+</div>
+
+<h2 id="coloursettings"><strong>Colour Settings</strong> - <a href="#toc">top</a></h2>
+<div class="bordered">
+<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Color Settings</strong></p>
+</div>
+<h3>Change theme colour scheme</h3>
+<p><strong class="path">Appearance &#8594; Customize &#8594; Mura: Color Settings &#8594; Theme Color Scheme</strong></p>
+<h3 id="widgethighlight">Set widget highlight background color</h3>
+<p>You can set a separate background (highlight) colour for selected widgets. Highlight widgets inherit all other colour settings configured for each sidebar.</p>
+<strong class="path">Appearance &#8594; Customize &#8594; Mura: Color Settings &#8594; Misc. Colors &#8594; Highlight Widget Background</strong>
+
+<h3>Select the widgets you want to highlight</h3>
+<ol>
+	<li>Add your widget to your sidebar using your <a href="#widgets">chosen method</a></li></li>
+	<li>Click <strong>Options</strong> icon (three dots) <strong>&#8594; Show More Settings &#8594; Advanced</strong></li>
+	<li>Add <code>tfm-highlight-widget</code> to <strong>Additional CSS Class</strong></li>
+	<li>Configure the widget and click <strong>Update/Publish</strong></li>
+</ol>
+
+<h3>Select the widgets you want to highlight (legacy widgets)</h3>
+<p>This method is for legacy widgets in WordPress 5.8.x only.</p>
+	<p><strong>If you have installed the <a href="https://wordpress.org/plugins/classic-widgets/" target="_blank">Classic Widgets</a> plugin use the <a href="#widgethighlightclassic">classic method below</a>.</strong></p>
+<ol>
+	<li>Add your widget to your sidebar using your <a href="#widgets">chosen method</a></li>
+	<li>View your website and locate the widget you want to highlight on the page</li>
+	<li><strong>Right Click</strong> on the widget <strong>&#8594; Inspect</strong></li>
+	<li>This will bring up the Inspector</li>
+	<li>Locate the <strong>ID</strong> of the widget which will be something like <code>section id="block-53"</code> or <code>section id="xxx_xxx_xxx"</code></li>
+	<li>Select and copy the ID E.g. <code>block-53</code></li>
+	<li>Go to <strong class="path">Appearance &#8594; Customize &#8594; Mura: Color Settings &#8594; Misc. Colors</strong></li>
+	<li>Paste/enter the ID of the widget in <strong>Highlight Widget IDs</strong> (comma separate multiple widget ID's)</li>
+	<li>Click <strong>Publish</strong></li>
+</ol>
+
+<h3 id="widgethighlightclassic">Select the widgets you want to highlight (classic method)</h3>
+<p>Since WordPress 5.8.0 you will need to install the <a href="https://wordpress.org/plugins/classic-widgets/" target="_blank">Classic Widgets</a> plugin to use this method</p>
+<ol>
+	<li>Install and activate <a href="https://wordpress.org/plugins/widget-css-classes/" target="_blank">Widget CSS Classes</a></li>
+	<li>Add your widget to your sidebar using the <a href="#widgets">classic method</a></li>
+	<li>Add <code>tfm-highlight-widget</code> to the <strong>CSS Class</strong> field for your widget</li>
+	<li>Configure the widget and click <strong>Save</strong></li>
+</ol>
+
+<h2 id="tfmpostblocks"><strong>Homepage Post Blocks</strong> - <a href="#toc">top</a></h2>
+<p class="notice">You will need to install <a href="#plugins">TFM: Homepage Post Blocks</a> plugin to use this feature.</p>
+<p>Using Post Blocks you can configure "blocks" of posts that are displayed on the homepage. Post blocks can replace the standard blog page or you can set a separate page for blog posts and use Post Blocks for the homepage (front page).</p>
+
+<p><strong class="path">Appearance &#8594; Customize &#8594; TFM: Homepage Post Blocks</strong></p>
+
+<ol>
+	<li>Go to <strong class="path">Appearance &#8594; Customize &#8594; TFM: Homepage Post Blocks</strong></li>
+	<li>Select a Block (E.g. Block 1)</li>
+	<li>Check: <strong>Enable Block</strong></li>
+	<li>Configure the block settings &amp; colours</li>
+	<li>To add a sidebar to your block, check: <strong>Display Sidebar</strong> and select a position.</li>
+	<li>Click <strong>Publish</strong></li>
+	<li>Repeat for each block you want to add</li>
+</ol>
+
+<h3>Display Widgets in Post Blocks</h3>
+
+<ol>
+			<li>Add your widgets to <strong>TFM: Hompage Post Block X</strong> sidebar by your <a href="#widgets">chosen method</a></li>
+			<li>Click <strong>Publish</strong></li>
+			<li>Repeat for each block/sidebar you want to add widgets</li>
+		</ol>
+
+		<h3>Create a separate blog list page</h3>
+
+		<ol>
+			<li>Go to <strong>Pages &#8594; Add New</strong></li>
+			<li>Create a page for <strong>Post blocks</strong> (this will be your Homepage)</li>
+			<li>Create a page for <strong>Blog posts</strong> (this will be your Posts Page)</li>
+			<li>Go to <strong>Settings &#8594; Reading</strong></li>
+			<li>Set <strong>Your homepage displays</strong> to <strong>A static page</strong></li>
+			<li>Select the <strong>Post blocks</strong> page you created from the <strong>Homepage</strong> selection.</li>
+			<li>Select the <strong>Blog posts</strong> page you created from the <strong>Posts page</strong> selection.</li>
+			<li>Click <strong>Save Changes</strong></li>
+		</ol>
+
+		<p>You may want to <a href="#navigation">add a link to your blog posts page</a> in your menus</p>
+
+		<h2 id="tfmrelatedposts"><strong>Related Posts</strong> - <a href="#toc">top</a></h2>
+		<div class="notice">You will need to install <a href="#plugins">TFM: Related Posts</a> plugin to use this feature</div>
+		<ol>
+			<li>Go to <strong>Appearance &#8594; Customize &#8594; TFM: Related Posts</strong></li>
+			<li>Check <strong>Display Related Posts</strong></li>
+			<li>Configure related post settings &amp; colours and click <strong>Publish</strong></li>
+		</ol>
+
+		<h2 id="tfmsocialsettings"><strong>Social Media Settings</strong> - <a href="#toc">top</a></h2>
+		<div class="notice">You will need to install <a href="#plugins">TFM: Social Plugin</a> plugin to use these features</div>
+
+		<h3>Display share icons in posts &amp; pages</h3>
+
+		<ol>
+			<li>Go to <strong class="path">Appearance &#8594; Customize &#8594; TFM Social Media Settings</strong></li>
+			<li>Check each share icon you want to display in <strong>Post &amp; Page Share Icons</strong></li>
+			<li>Choose an Icon Style and Colour Scheme</li>
+			<li>Check: <strong>Share Posts/Pages</strong></li>
+			<li>Choose a display location</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<h3>Display author bio social icons</h3>
+
+		<ol>
+			<li>Go to <strong class="path">Users &#8594; Profile</strong></li>
+			<li>Enter the full URL's of your social media channels and click <strong>Save</strong></li>
+			<li>Go to <strong class="path">Appearance &#8594; Customize &#8594; TFM Social Media Settings</strong></li>
+			<li>Scroll down to <strong>Author Bio Social Icons</strong> and check <strong>Show Icons in Single Author Bio</strong></li>
+			<li>Choose an Icon Style and Colour Scheme</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+		
+		<h3>Display social icons in the header &amp; footer</h3>
+
+		<ol>
+			<li>Go to <strong class="path">Appearance &#8594; Customize &#8594; TFM Social Media Settings</strong></li>
+			<li>Enter the full URL's of your social media channels</li>
+			<li>Choose an Icon Style and Colour Scheme</li>
+			<li>Check: <strong>Show Social Icons in Site Header/Footer</strong></li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<h3>Social Media Widget</h3>
+
+		<ol>
+			<li>Go to <strong>Appearance &#8594; Customize &#8594; TFM: Social Media Settings</strong></li>
+			<li>Enter the full URL's of your social media channels</li>
+			<li>Click <strong>Publish</strong></li>
+			<li>Add the <strong>TFM Social Media</strong> widget to your sidebar by your <a href="#widgets">chosen method</a></li>
+			<li>Configure the widget and click <strong>Save/Publish</strong></li>
+		</ol>
+
+		<h2 id="tfmads"><strong>Advertising Areas</strong> - <a href="#toc">top</a></h2>
+
+		<p>You can add your own banners, Google AdSense code or any other banner code to any sidebar using the HTML widget or image widget.</p>
+
+		<h3>Add Google AdSense (or any other banner code)</h3>
+		<ol>
+			<li>Add the <strong>HTML</strong> widget to your sidebar by your <a href="#widgets">chosen method</a></li>
+			<li>Enter your Advert Code (for example Google AdSense)</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<h3>Add a banner image and link</h3>
+		<ol>
+			<li>Add the <strong>Image</strong> widget to your sidebar by your <a href="#widgets">chosen method</a></li>
+			<li>Enter your Advert Code (for example Google AdSense)</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<h3>TFM: Dedicated Advertising Areas</h3>
+
+		<div class="notice">You will need to install <a href="#plugins">TFM: Theme Boost</a> plugin to use this feature</div>
+
+		<h3>Upload your own banner and link</h3>
+
+		<ol>
+			<li>Go to <strong>Appearance &#8594; Customize &#8594; TFM: Advertising Spots</strong></li>
+			<li>Select an Advertising Location</li>
+			<li>Upload a standard resolution and/or high resolution banner</li>
+			<li>Enter the desination URL</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<h3>Add Google AdSense (or any other code) or external banner source</h3>
+
+		<p>For every advertising area there is a dedicated sidebar</p>
+
+		<ol>
+			<li>Go to <strong>Appearance &#8594; Customize &#8594; Widgets</strong> or use one of the other <a href="#widgets">widget methods</a></li>
+			<li>Select a <strong>TFM: Advertising Location</strong></li>
+			<li>Add the <strong>HTML Widget</strong> and enter your Advertising code or add the <strong>Image Widget</strong> and enter the URL and link for your banner</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<h2 id="translate"><strong>Theme Translation</strong> - <a href="#toc">top</a></h2>
+
+		<div class="bordered plugin">
+			<img src="assets/media/icon-loco-translate.png" alt=""><h3>Loco Translate</h3>
+		<p>Translate WordPress plugins and themes directly in your browser</p>
+		<p><a href="https://en-gb.wordpress.org/plugins/loco-translate/" class="gotoplugin" target="_blank">Plugin site &#8594;</a></p>
+	</div>
+
+		<h3>Install Loco Translate Plugin</h3>
+
+		<ol>
+			<li>Go To <strong class="path">Plugins &#8594; Add New.</strong> and search for <strong>Loco Translate</strong></li>
+			<li>Download &amp; Activate the plugin</li>
+			<li>Loco Translate is now added to the admin panel</li>
+		</ol>
+
+		<h3>Create a New Theme Translation</h3>
+
+		<ol>
+			<li>Go to <strong class="path">Loco Translate &#8594; Themes.</strong></li>
+			<li>Click <strong>Mura.</strong></li>
+			<li>Click <strong>New Language.</strong></li>
+			<li>Choose a language from the drop down menu and click <strong>Start Translating.</strong></li>
+			<li>In the <strong>source text</strong> field select the text you want to translate.</li>
+			<li>In the <strong>translation</strong> field type your translation for the selected text.</li>
+			<li>Click <strong>Save.</strong></li>
+		</ol>
+
+		<p>Change your site language to see the new translation</p>
+
+		<h3>Create a New Plugin Translation</h3>
+
+		<ol>
+			<li>Go to <strong class="path">Loco Translate &#8594; Plugins.</strong></li>
+			<li>Click the plugin you want to translate.</li>
+			<li>Continue from <strong>step 3</strong> above.</li>
+		</ol>
+
+		<div class="notice">
+		<p>To change text strings but <em>not</em> the language select the same language that is set in <strong class="path">Settings &#8594; General &#8594; Site Language</strong></p>
+	</div>
+
+	<h2 id="optimization"><strong>Optimization (Page Speed/SEO)</strong> - <a href="#toc">top</a></h2>
+
+
+		<p>The best thing you can do for your website speed is to host your website on a good VPS/Dedicated server or a good hosting package. You can also improve your site speed with one of the many cache or optimization plugins.</p>
+
+		<h3>Recommended plugins</h3>
+
+		<div class="bordered plugin">
+			<img src="assets/media/wpsupercache-icon-256x256.png" alt=""><h3>WP Super Cache</h3>
+			<p>A very fast caching engine for WordPress that produces static html files.</p>
+			<p><a href="https://wordpress.org/plugins/wp-super-cache/" class="gotoplugin" target="_blank">Plugin site &#8594;</a></p>
+		</div>
+
+		<div class="bordered plugin">
+			<img src="assets/media/autoptimize-icon-128x128.png" alt=""><h3>Autoptimize</h3>
+			<p>Autoptimize speeds up your website by optimizing JS, CSS, images (incl. lazy-load), HTML and Google Fonts, asyncing JS, removing emoji cruft and more.</p>
+			<p><a href="https://wordpress.org/plugins/autoptimize/" class="gotoplugin" target="_blank">Plugin site &#8594;</a></p>
+		</div>
+
+		<h3>Install Autoptimize Plugin</h3>
+
+		<ol>
+			<li>Go To <strong class="path">Plugins &#8594; Add New.</strong> and search for <strong>Autoptimize</strong></li>
+			<li>Download &amp; Activate the plugin</li>
+			<li>Autoptimize is now added to the settings panel</li>
+		</ol>
+
+		<h3>Configure Autoptimize settings</h3>
+
+		<p><strong lass="path">Settings &#8594; Autoptimize</strong> Or click the <strong>Autoptimize</strong> icon at the top of the page</p>
+
+		<h3>JS, CSS &amp; HTML</h3>
+
+		<ol>
+			<li>Check <strong>Optimize JavaScript Code</strong></li>
+			<li>Check <strong>Aggregate JS-files</strong></li>
+			<li>Check <strong>Optimize CSS Code</strong></li>
+			<li>Check <strong>Aggregate CSS-files</strong></li>
+			<li>Check <strong>Also Aggregate inline CSS</strong></li>
+			<li>Check <strong>Optimize HTML Code</strong></li>
+			<li>Check <strong>Save aggregated script/css as static files</strong></li>
+			<li>Check <strong>Minify excluded CSS and JS files</strong></li>
+			<li>Check <strong>Also optimize for logged in users</strong></li>
+		</ol>
+
+		<p>Check/Remove any other settings as required.</p>
+
+		<h3>Images</h3>
+
+		<ol>
+			<li>Check <strong>Lazy-load images</strong></li>
+		</ol>
+
+		<p>Check/Remove any other settings a required.</p>
+
+		<h3>Extra</h3>
+
+		<ol>
+			<li>Check <strong>Combine and load fonts asynchronously with webfont.js</strong></li>
+			<li>Check <strong>Remove emojis</strong></li>
+			<li>Check <strong>Remove query strings from static resources</strong></li>
+		</ol>
+
+		<p>Check/Remove any other settings a required and click <strong>Save</strong></p>
+
+		<h3>Optimize Images</h3>
+
+		<p>You can reduce the quality of stored images to reduce file size and improve page speed. Mura uses native WordPress image sizes for all displays. Using this feature will not generate additional images but will replace existing generated images with lower quality versions.</p>
+
+		<div class="notice">You will need to install and activate <a href="#plugins">TFM Theme Boost</a> plugin to use this feature</div>
+
+		<h3>Install Regenerate Thumbnails Plugin</h3>
+
+		<div class="bordered plugin">
+			<img src="assets/media/regenerate-thumbanils-icon-256x256.png" alt="">
+			<h3>Regenerate Thumbnails</h3>
+			<p>Regenerate the thumbnails for one or more of your image uploads. Useful when changing their sizes or your theme.</p>
+			<p><a href="https://wordpress.org/plugins/regenerate-thumbnails/" class="gotoplugin" target="_blank">Plugin site &#8594;</a></p>
+		</div>
+
+		<ol>
+			<li>Go To <strong class="path">Plugins &#8594; Add New</strong> and search for <strong>Regenerate Thumbnails</strong></li>
+			<li>Download &amp; Activate the plugin</li>
+			<li>Regenerate Thumbnails is now added to the <strong>Tools</strong> menu</li>
+		</ol>
+
+		<h3>Regenerate images</h3>
+
+		<ol>
+			<li>Go To <strong class="path">Appearance &#8594; Customize &#8594; TFM Theme Boost.</strong></li>
+			<li>Change <strong>Image Quality</strong> to <strong>65*</strong> and click <strong>Publish</strong></li>
+			<li>Go to <strong class="path">Tools &#8594; Regenerate Thumbnails</strong></i></li>
+			<li>Un-check <strong>Skip regenerating existing correctly sized thumbnails (faster).</strong></li>
+			<li>Click <strong>Regenerate Thumbnails for All x Attachments</strong></li>
+		</ol>
+
+		<p><b>*</b> You can try different image quality settings until you are happy with the result.</p>
+
+		<h2 id="amp"><strong>Install &amp; Configure AMP</strong> - <a href="#toc">top</a></h2>
+
+		<h3>Install AMP</h3>
+
+		<ol>
+			<li>Go To <strong class="path">Plugins &#8594; Add New.</strong> and search for <strong>AMP</strong></li>
+			<li>Download &amp; Activate the Official AMP plugin</li>
+			<li>There will now be a new <strong>AMP</strong> section in the main menu.</li>
+		</ol>
+
+		<h3>Configure AMP</h3>
+
+		<ol>
+			<li>Go to <strong class="path">AMP &#8594; Settings</strong></li>
+			<li>Check <strong>Reader</strong> in the <strong>Template Mode</strong> section</li>
+			<li>Expand the <strong>Reader Theme</strong> tab &amp; select <strong>AMP Legacy*</strong></li>
+			<li>Expand the <strong>Supported Templates</strong> tab and check <strong>Posts, Pages</strong>. Uncheck everything else.</li>
+			<li>Click <strong>Save</strong></li>
+		</ol>
+
+		<p>* Mura has a custom AMP theme which will be used instead of the Legacy Theme.</p>
+
+		<h2 id="postformats"><strong>Post Formats</strong> - <a href="#toc">top</a></h2>
+
+		<p>You can set post formats in the <strong>New/Edit Post</strong> settings panel <strong>&#8594; Post Format</strong></p>
+
+		<div class="bordered plugin">
+		<h3>Standard Format</h3>
+		<p>Select this format for standard posts, you can emebed media, galleries, images and video as normal.</p>
+	</div>
+
+	<div class="bordered plugin">
+		<h3>Gallery Format</h3>
+		<p>This format adds a gallery icon to posts (if post format icons are enabled). Gallery format functions like a standard post format.</p>
+	</div>
+
+		<div class="bordered plugin"><h3>Video/Audio Format</h3>
+		<p>This format adds a video/audio icon to posts (if post format icons are enabled).</p>
+
+		<h3>Add video/audio to the featured area in single posts</h3>
+
+		<p class="notice">You need to install <a href="#plugins">TFM Theme Boost</a> plugin to use this feature. Only <strong>Default</strong> and <strong>Default Alt</strong> post styles support this feature.</p>
+
+		<ol>
+			<li>Go to <strong>Posts &#8594; Add New</strong> or edit an existing post</li>
+			<li>Embed the video/audio you want to feature as the <strong>first element in your content</strong></li>
+			<li>Add any other post content as normal</li>
+			<li>In the Settings Panel select <strong>Video/Audio</strong> Post Format</li>
+			<li>In the Settings Panel under <strong>Mura: Post Options</strong> check <strong>Disable Single Featured Image</strong></li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<p><strong>Note*</strong> If your post does not have a featured image you can ignore these steps and just select video format.</p>
+
+	</div>
+
+	<div class="bordered plugin">
+
+		<h3>Image Format</h3>
+		<p>Image format has a cover style in archive and blog list displays.</p>
+		<p>You can customize the image format in <strong>Appearance &#8594; Customize &#8594;  Mura: Theme Settings &#8594; Image Format Settings</strong></p>
+	</div>
+
+		<h2 id="hooks">Theme Hooks - <a href="#toc">top</a></h2>
+
+		<p>Hooks allow you to further extend theme functionality by adding your own functions, sidebars, banners or plugin output. This is advanced functionality for theme developers.</p>
+
+		<h3>Example use of a Hook</h3>
+		<p>This function will output "<code>lorem ipsum dior</code>" after the theme header.</p>
+		<pre>
+<code>function my_custom_function( ) {
+  echo '&#60;h2&#62;' . esc_html__( 'lorem ipsum dior', 'mura' ) . '&#60;/h2&#62;';
+}
+add_action('tfm_after_header', 'my_custom_function', 10 );</code></pre>
+		<h3>Available hooks</h3>
+		<div class="hooks">
+		<ul>
+			<li><tt>tfm_before_header</tt></li>
+			<li><tt>tfm_after_header</tt></li>
+			<li><tt>tfm_header_left</tt></li>
+			<li><tt>tfm_header_right</tt></li>
+			<li><tt>tfm_after_content</tt></li>
+			<li><tt>tfm_before_single_content</tt></li>
+			<li><tt>tfm_author_bio_bottom</tt></li>
+			<li><tt>tfm_before_wrapper_close</tt></li>
+			<li><tt>tfm_after_entry_wrapper</tt></li>
+			<li><tt>tfm_before_post_pagination</tt></li>
+			<li><tt>tfm_page_footer</tt></li>
+			<li><tt>tfm_before_footer</tt></li>
+			<li><tt>tfm_after_footer</tt></li>
+			<li><tt>tfm_append_footer_bottom</tt></li>
+			<li><tt>tfm_before_loop</tt></li>
+			<li><tt>tfm_after_loop</tt></li>
+			<li><tt>tfm_before_comments</tt></li>
+			<li><tt>tfm_after_comments</tt></li>
+			<li><tt>tfm_before_entry_title</tt></li>
+			<li><tt>tfm_after_entry_title</tt></li>
+			<li><tt>tfm_after_wrap</tt></li>
+			<li><tt>tfm_prepend_after_title_meta</tt></li>
+			<li><tt>tfm_append_after_title_meta</tt></li>
+			<li><tt>tfm_hentry_footer_before</tt></li>
+			<li><tt>tfm_hentry_footer_after</tt></li>
+			<li><tt>tfm_after_continue_reading_button</tt></li>
+		</ul>
+	</div>
+
+	<h2 id="fonts"><strong>How to change fonts</strong> - <a href="#toc">top</a></h2>
+
+	<p class="notice">This guide uses the <a href="https://wordpress.org/plugins/easy-google-fonts/" target="_blank">Easy Google Fonts</a> plugin</p>
+
+	<ol>
+			<li>Go to <strong class="path">Plugins &#8594; Add New</strong> and search for <strong>Easy Google Fonts</strong></li>
+			<li>Click <strong>Install Now</strong> and then click <strong>Activate</strong></li>
+		</ol>
+
+		<h3>Change fonts for entire theme</h3>
+
+		<p>We will be changing the body fonts and title fonts globally. To do that we need to create font controls.</p>
+
+		<ol>
+			<li>Go to <strong class="path">Settings &#8594; Easy Google Fonts</strong></li>
+		</ol>
+
+		<h4>Create Body Font Control</h4>
+
+		<ol>
+			<li>Click <strong class="path">Create new font control</strong></li>
+			<li>Give it a name (E.g. Body Font)</li>
+			<li>Click <strong>Save Font Control</strong></li>
+		</ol>
+
+		<p>We now need to add the CSS selectors that we want to control. In this case thats the main body font.</p>
+
+		<p>Copy/paste these selectors into <strong>Font Control CSS Selectors</strong> and press the <strong>Enter Key</strong></p>
+
+		<code>
+			body,input,textarea,.tfm-menu-sash span
+		</code>
+
+		<p>Click <strong>Save Font Control</strong></p>
+
+		<img src="assets/media/font-control.png" alt="font control" />
+
+		<h4>Create Title Font Control</h4>
+
+		<ol>
+			<li>Click <strong class="path">Create new font control</strong></li>
+			<li>Give it a name (E.g. Title Font Elements)</li>
+			<li>Click <strong>Save Font Control</strong></li>
+		</ol>
+
+		<p>The title font is used in various theme elements not just titles so we need to enter the CSS selectors of every element that uses the title font</p>
+
+		<p>Copy/paste these selectors into <strong>Font Control CSS Selectors</strong> and press the <strong>Enter Key</strong></p>
+
+		<code>
+			.entry-meta a[class*="cat-link"],.tfm-link-more a,label,button,.button,input[type="button"],input[type="reset"],input[type="submit"],ul.primary-menu,.primary-nav-sidebar,ul.header-secondary,.wp-block-quote.is-large p,.wp-block-quote.is-style-large p,.widget_tag_cloud a,.single-post-tags a,.child-categories a,a.tag-cloud-link,.wp-block-latest-posts__list li a,.tfm_posts_widget .entry-title-link,.tfm-social-icons .tfm-social-icon,.entry-read-more .read-more
+		</code>
+
+		<p>Click <strong>Save Font Control</strong></p>
+
+		<p>Now lets apply our font choice to these controls</p>
+
+		<ol>
+			<li>Click <strong class="path">Appearance &#8594; Customize &#8594; Typography &#8594; Theme Typography</strong></li>
+			<li>Select <strong>Body Font</strong></li>
+			<li>Choose a font from the <strong>Font Family</strong> selection list</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<p>The new Body Font is applied throughout the theme. Now do the same for <strong>Title Font Elements</strong>. The new title font is applied throught the theme.</p>
+
+		<img src="assets/media/typography.png" alt="font control">
+
+		<h4>Create Selective Font Control</h4>
+
+		<p>You can also create a selective font control to change the font for specific elements. Let's change the font for buttons.</p>
+
+		<ol>
+			<li>Go to <strong class="path">Settings &#8594; Easy Google Fonts</strong></li>
+			<li>Click <strong class="path">Create new font control</strong></li>
+			<li>Give it a name (E.g. Buttons)</li>
+			<li>Click <strong>Save Font Control</strong></li>
+		</ol>
+
+		<p>We just need the button CSS selectors. Copy/paste these selectors into <strong>Font Control CSS Selectors</strong> and press the <strong>Enter Key</strong></p>
+
+		<code>
+			button,.button,input[type="button"],input[type="reset"],input[type="submit"]
+		</code>
+
+		<ol>
+			<li>Click <strong class="path">Appearance &#8594; Customize &#8594; Typography &#8594; Theme Typography</strong></li>
+			<li>Select <strong>Buttons</strong></li>
+			<li>Choose a font from the <strong>Font Family</strong> selection list</li>
+			<li>Click <strong>Publish</strong></li>
+		</ol>
+
+		<h2 id="tfmratings"><strong>Add Rating to Posts</strong> - <a href="#toc">top</a></h2>
+
+	<p class="notice">You will need to install <a href="#plugins">TFM: Theme Boost</a> plugin to use this feature</p>
+
+	<h3>Add &amp; display ratings to single posts</h3>
+	<ol>
+		<li>Go to <strong>New/Edit</strong> Post page</li>
+		<li>In the Settings panel scroll down to <strong>Mura: Ratings</strong></li>
+		<li>Select a range</li>
+		<li>Enter a total score</li>
+		<li>Select a ratings type (you can display as many rating types as you want)</li>
+		<li>Click <strong>Publish</strong></li>
+	</ol>
+
+	<h3>Display ratings in blog list/archive pages</h3>
+
+	<ol>
+		<li>Go to <strong class="path">Appearance &#8594; Customize &#8594; Mura: Theme Settings &#8594; Archive/Category Settings</strong></li>
+		<li>Scroll down to <strong>Ratings</strong> and check each rating type you want to display</li>
+		<li>Click <strong>Publish</strong></li>
+	</ol>
+
+		<h2 id="credits"><strong>Sources and Credits</strong> - <a href="#toc">top</a></h2>
+		
+		<p>I've used the following images, icons or other files as listed.</p>
+		
+		<ul>
+			<li>PHP, HTML and CSS code by <b>3FortyMedia</b></li>
+			<li><a href="http://fontello.com/">Fontello</a> Icon Fonts</li>
+			<li>Images <a href="https://www.freepik.com">Freepik</a> &amp; <a href="https://unsplash.com/">Unsplash</a> &amp; <a href="https://wallpaperaccess.com/">WallpaperAccess</a> </li>
+		</ul>
+
+		<h2 id="changelog"><strong>Changelog</strong> - <a href="#toc">top</a></h2>
+
+		<div class="changelog">
+
+			<h3>July 03, 2025 - <strong>Version 1.7.0</strong></h3>
+			<ul>
+				<li>Fixed: language initialize error (since WP 6.8.1)</li>
+			</ul>
+
+			<h3>Feb 07, 2025 - <strong>Version 1.6.9</strong></h3>
+			<ul>
+				<li>Added: Mastodon social icon (TFM: Theme Boost)</li>
+				<li>Fixed iOS jquery click events</li>
+			</ul>
+			<!-- change -->
+
+			<h3>November 04, 2024 - <strong>Version 1.6.8</strong></h3>
+			<ul>
+				<li>Updated: TGMPA plugin (PHP8.x support)</li>
+				<li>Fixed: plugin modules not activating when using OCDI (php 8)</li>
+				<li>Added: BlueSky and Apple Podcasts social icon (TFM: Theme Boost)</li>
+				<li>Added menu assignment to OCDI mport</li>
+				<li>Added <code>aria-label</code> to social icons for improved SEO</li>
+				<li>Minor CSS updates</li>
+			</ul>
+			<!-- change -->
+
+			<h3>May 27, 2024 - <strong>Version 1.6.7</strong></h3>
+			<ul>
+				<li>Additional webp support</li>
+			</ul>
+			<!-- change -->
+
+			<h3>May 26, 2024 - <strong>Version 1.6.6</strong></h3>
+			<ul>
+				<li>WooCommerce v8.x (all versions) support</li>
+			</ul>
+			<!-- change -->
+
+			<h3>September 21, 2023 - <strong>Version 1.6.5</strong></h3>
+			<ul>
+				<li>TFM Theme Boost Plugin update</li>
+			</ul>
+			<!-- change -->
+
+			<h3>July 09, 2023 - <strong>Version 1.6.4</strong></h3>
+			<ul>
+				<li>wp6.2.2 editor styling fixes</li>
+			</ul>
+			<!-- change -->
+
+			<h3>July 05, 2023 - <strong>Version 1.6.3</strong></h3>
+			<ul>
+				<li>Fixed: Woocommerce checkbox display bug</li>
+			</ul>
+			<!-- change -->
+
+			<h3>February 21, 2023 - <strong>Version 1.6.2</strong></h3>
+			<ul>
+				<li>Migrated TFM social plugin CSS to TFM Theme Boost plugin directory (TFM Theme Boost v2.1)</li>
+			</ul>
+			<!-- change -->
+
+			<h3>February 10, 2023 - <strong>Version 1.6.1</strong></h3>
+			<ul>
+				<li>Fixed Read time not displaying since version 1.6</li>
+			</ul>
+			<!-- change -->
+
+			<h3>February 01, 2023 - <strong>Version 1.6</strong></h3>
+			<ul>
+				<li>Support for new TFM: Theme Boost Plugin (requires uninstall of TFM: Hero, TFM: Posts Widget, TFM: Social Media, TFM: Related Posts) and update of TFM: Theme Boost plugin</li>
+				<li>Fixed: Category slug count</li>
+				<li>Fixed: Human Readable entry data in hero plugin</li>
+				<li>Fixed: Cover format padding on mobile devices</li>
+				<li>Fixed: Social icons css</li>
+				<li>Added: Ajax cart icon</li>
+				<li>Added: Rankmath breadcrumbs styling support</li>
+			</ul>
+			<!-- change -->
+
+			<h3>December 29, 2022 - <strong>Version 1.5.6</strong></h3>
+			<ul>
+				<li>Minor CSS updates</li>
+				<li>Plugin version requirement update</li>
+				<li>Allow basic HTML in featured image captions</li>
+			</ul>
+			<!-- change -->
+
+			<h3>December 23, 2022 - <strong>Version 1.5.5</strong></h3>
+			<ul>
+				<li>Added Twitch and Gettr social and share icons</li>
+			</ul>
+			<!-- change -->
+
+			<h3>December 17, 2022 - <strong>Version 1.5.4</strong></h3>
+			<ul>
+				<li>Fixed WooCommerce products support in TFM post blocks (requires TFM Homepage Post Blocks plugin update)</li>
+			</ul>
+			<!-- change -->
+
+			<h3>November 03, 2022 - <strong>Version 1.5.3</strong></h3>
+			<ul>
+				<li>Fixed Hero margins on mobile</li>
+			</ul>
+			<!-- change -->
+
+			<h3>October 30, 2022 - <strong>Version 1.5.2</strong></h3>
+			<ul>
+				<li>Updated download plugin URL's</li>
+			</ul>
+			<!-- change -->
+
+			<h3>October 22, 2022 - <strong>Version 1.5.1</strong></h3>
+			<ul>
+				<li>Fixed pagination when using query offset</li>
+			</ul>
+			<!-- change -->
+
+			<h3>October 20, 2022 - <strong>Version 1.5.0</strong></h3>
+			<ul>
+				<li>Added new demo import</li>
+			</ul>
+			<!-- change -->
+
+			<h3>September 10, 2022 - <strong>Version 1.4.9</strong></h3>
+			<ul>
+				<li>Plugin updates</li>
+			</ul>
+			<!-- change -->
+
+			<h3>July 14, 2022 - <strong>Version 1.4.8</strong></h3>
+			<ul>
+				<li>WP 6.0.1 fixes</li>
+				<li>Fixed meta customizer setting</li>
+				<li>File updates</li>
+				<li>New language file</li>
+			</ul>
+			<!-- change -->
+
+			<h3>July 12, 2022 - <strong>Version 1.4.7</strong></h3>
+			<ul>
+				<li>Plugin updates</li>
+				<li>Minor CSS updates</li>
+				<li>Minor theme file updates</li>
+				<li>New language files</li>
+			</ul>
+			<!-- change -->
+
+			<h3>July 01, 2022 - <strong>Version 1.4.6</strong></h3>
+			<ul>
+				<li><strong>Phase 1 of Javascript API integration</strong></li>
+				<li>Fixed nested list word-wrap on mobile</li>
+				<li>Fixed iOS zooming on search input field</li>
+				<li>Fixed toggle comments button still showing when disabled</li>
+				<li>Fixed Back To Top button CSS</li>
+				<li>Minor CSS updates</li>
+				<li>Minor plugin updates</li>
+				<li>New language files</li>
+			</ul>
+			<!-- change -->
+
+			<h3>June 21, 2022 - <strong>Version 1.4.5</strong></h3>
+			<ul>
+				<li>Replaced search form popup with toggle search sidebar</li>
+				<li>Added additional widget area (search sidebar)</li>
+				<li>Fixed figcaption not showing for Hero layouts</li>
+				<li>Minor CSS updates</li>
+			</ul>
+			<!-- change -->
+
+			<h3>June 13, 2022 - <strong>Version 1.4.4</strong></h3>
+			<ul>
+				<li>Minor WP6.0 bug fixes</li>
+				<li><sup>TFM</sup> Homepage related posts: Added support for <sup>TFM</sup> Theme Boost Ratings</li>
+				<li><sup>TFM</sup> Hero: Added support for <sup>TFM</sup> Theme Boost Ratings</li>
+			</ul>
+			<!-- change -->
+
+			<h3>June 09, 2022 - <strong>Version 1.4.3</strong></h3>
+			<ul>
+				<li>Minor styling fixes and improvements</li>
+				<li>Additional theme colour options</li>
+				<li>New language files</li>
+				<li><sup>TFM</sup> Theme Boost: Added JetPack ratings block support with additional custom display options (stars, points &amp; percent) and ability to show in archive displays</li>
+				<li><sup>TFM</sup> Hero plugin: Minor .js file update</li>
+				<li><sup>TFM</sup> Homepage post blocks: Added support for <sup>TFM</sup> Theme Boost Ratings</li>
+				<li><sup>TFM</sup> Posts Widget: Added support for <sup>TFM</sup> Theme Boost Ratings</li>
+			</ul>
+			<!-- change -->
+
+			<h3>June 05, 2022 - <strong>Version 1.4.2</strong></h3>
+			<ul>
+				<li>Optimized category  and tag slug customizer color settings (added limiters and filters)</li>
+			</ul>
+			<!-- change -->
+
+			<h3>June 04, 2022 - <strong>Version 1.4.1</strong></h3>
+			<ul>
+				<li>Fixed Category slug global color not applying</li>
+				<li>Fixed Gutenberg text align in Blockquotes</li>
+				<li>Various styling updates</li>
+				<li>New language files</li>
+				<li>Added new demo imports</li>
+				<li><sup>TFM</sup> HERO Added variable thumbnail sizes</li>
+				<li><sup>TFM</sup> Homepage Post Blocks Added variable thumbnail sizes</li>
+				<li><sup>TFM</sup> Homepage Post Blocks Added "Hero" thumbnail aspect ratio option</li>
+				<li><sup>TFM</sup> Related Posts added sort order option</li>
+			</ul>
+			<!-- change -->
+			<h3>May 31, 2022 - <strong>Version 1.4</strong></h3>
+
+			<h4>Fixes</h4>
+			<ul>
+				<li>Fixed border radius setting on mobile devices</li>
+				<li>Fixed false sidebar active status</li>
+				<li>Various styling fixes</li>
+			</ul>
+			<h4>Improvements &amp; Updates</h4>
+			<ul>
+				<li>List layout now supports mulitple columns</li>
+				<li>Rewritten and improved mobile breakpoint styling</li>
+				<li>Removed font settings customizer panel (use Easy Google Fonts or CSS instead)</li>
+				<li>Added styling support for <sup>TFM</sup> Hero and <sup>TFM</sup> Post Blocks new Offset and List Layouts</li>
+				<li>Added new demo imports</li>
+			</ul>
+			<h4>Plugin Updates</h4>
+			<p>See readme.txt file for each plugin for detailed updates</p>
+			<ul>
+				<li><sup>TFM</sup> Hero</li>
+				<li><sup>TFM</sup> Homepage Post Blocks</li>
+				<li><sup>TFM</sup> Related Posts</li>
+			</ul>
+			<!-- change -->
+
+			<h3>May 30, 2022 - <strong>Version 1.3.2</strong></h3>
+			<ul>
+				<li>Fixed Front-end theme color settings in Guteneberg posts</li>
+			</ul>
+			<!-- change -->
+			<h3>May 27, 2022 - <strong>Version 1.3.1</strong></h3>
+			<ul>
+				<li>Fixed Gutenberg color palette when changing theme colour scheme</li>
+			</ul>
+			<!-- change -->
+			<h3>May 26, 2022 - <strong>Version 1.3</strong></h3>
+			<ul>
+				<li>WordPress 6.0 Compatibility Updates</li>
+			</ul>
+			<!-- change -->
+			<h3>May 15, 2022 - <strong>Version 1.2</strong></h3>
+			<ul>
+				<li>Added AMP theme</li>
+				<li>Updated TFM: Theme Boost Plugin</li>
+			</ul>
+			<!-- change -->
+			<h3>May 11, 2022 - <strong>Version 1.1</strong></h3>
+			<ul>
+				<li>TFM Related Posts Plugin: Fixed Tags relationship method bug</li>
+				<li>New Demo Imports</li>
+			</ul>
+			<!-- release -->
+		<h3>May 04, 2022 - <strong>Version 1.0</strong></h3>
+		<ul>
+			<li>Initial Release</li>
+		</ul>
+	</div>
+		
+		<p><a href="#toc">Back to top ^</a></p>
+
+		</div>
+
+	</div>
+		
+	<script>
+window.onload = (function(){ prettyPrint(); });
+</script>
+</body>
+</html>
